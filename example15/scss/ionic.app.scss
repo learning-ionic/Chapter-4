@@ -1,0 +1,58 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// override all $stable themed components
+$stable: #009688;
+
+// override the burger menu color
+$bar-stable-text: #eee;
+
+// override app base color
+$base-color: #00695C;
+
+// increase the item padding
+$item-padding : 30px;
+
+// overide buttons
+$button-positive-bg: #00BFA5;
+$button-positive-border: #00BFA5;
+$button-positive-active-bg: #80CBC4;
+$button-positive-active-border: #80CBC4;
+$button-positive-text: #eee;
+
+// border & active bg color
+$item-default-border: #009688;
+$item-default-active-bg: #B2DFDB;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Override title color
+.bar.bar-stable .title{
+	color:#eee;
+}
+
+// Override the item background and color
+.item-complex .item-content{
+	background:#E0F2F1;
+	color:#00695C;
+}
+
